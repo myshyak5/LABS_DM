@@ -154,11 +154,11 @@ if __name__ == "__main__":
     entropy_bigrams = -sum(p * math.log2(p) for p in probs_bigrams)
     shannon_bigrams_bits = entropy_bigrams * total_bigrams
     
-    print(f"    Равномерный код: {uniform_bits} бит")
-    print(f"    Код Хаффмана (буквы): {huffman_letters_bits} бит")
-    print(f"    Код Хаффмана (пары букв): {huffman_bigrams_bits} бит")
-    print(f"    По Шеннону (буквы): {shannon_letters_bits} бит")
-    print(f"    По Шеннону (пары): {shannon_bigrams_bits} бит")
+    print(f"Равномерный код: {uniform_bits} бит")
+    print(f"Код Хаффмана (буквы): {huffman_letters_bits} бит")
+    print(f"Код Хаффмана (пары букв): {huffman_bigrams_bits} бит")
+    print(f"По Шеннону (буквы): {shannon_letters_bits} бит")
+    print(f"По Шеннону (пары): {shannon_bigrams_bits} бит")
     
     print(f"\nСравнение с равномерным кодом:")
     print(f"    Хаффман (буквы) / Равномерный: {huffman_letters_bits/uniform_bits}")
